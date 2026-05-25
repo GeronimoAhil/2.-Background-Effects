@@ -1,0 +1,81 @@
+<div class="app-background">
+    <div class="weather-container">
+        <!-- Main Gradient Card -->
+        <div class="current-card">
+            <h1 class="city">Australia</h1>
+            <p class="date">25/05/26, Monday</p>
+            <div class="temp-display">
+                <span class="temp">23°C</span>
+                <p class="condition">Sunny and Delightful</p>
+            </div>
+        </div>
+
+        <!-- Weekly Forecast Section -->
+        <div class="forecast-section">
+            <h2 class="title">Weekly Forecast</h2>
+            <div class="forecast-grid">
+                <div class="forecast-item"><p>Tue</p><span>24°</span></div>
+                <div class="forecast-item"><p>Wed</p><span>21°</span></div>
+                <div class="forecast-item"><p>Thu</p><span>22°</span></div>
+                <div class="forecast-item"><p>Fri</p><span>20°</span></div>
+                <div class="forecast-item"><p>Sat</p><span>22°</span></div>
+                <div class="forecast-item"><p>Sun</p><span>19°</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+.app-background {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.current-card {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  padding: 40px;
+  border-radius: 24px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.forecast-section {
+  background: white;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-section .title {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  color: #1a202c;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.forecast-item p {
+  margin: 0;
+  font-weight: 500;
+  color: #718096;
+}
+
+.forecast-item span {
+  font-weight: bold;
+  color: #2d3748;
+}
